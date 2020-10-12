@@ -1,0 +1,16 @@
+<html>
+  <head></head>
+  <body>
+
+    <script src="./blocksdk.js">
+var sdk = new window.sfdc.BlockSDK();
+sdk.getContent(function (content) {
+  content += '.';
+  sdk.setSuperContent(content, function (setSuperContent) {
+    // block content is now its original content + '.'
+  });
+});
+    </script>
+    okay !
+  </body>
+</html>
